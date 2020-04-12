@@ -14,7 +14,7 @@ const ORDER_TOKEN = Object.freeze({
 
 const operations = Object.freeze({
   eq: (a, b) => `(${a},eq,${b})`,
-  like: (a, b, config = { left: true, right: true }) => `(${a},like,${config.left ?? '~'}${b}${config.right ?? '~'})`
+  like: (a, b, config = { left: true, right: true }) => `(${a},like,${config.left && '~'}${b}${config.right && '~'})`
 });
 
 /**
