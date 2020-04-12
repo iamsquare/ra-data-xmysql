@@ -1,7 +1,6 @@
 {
   "name": "@iamsquare/ra-data-xmysql",
-  "version": "0.0.1",
-  "private": false,
+  "version": "0.0.2",
   "description": "A react-admin dataProvider for xmysql's API generator",
   "main": "src/index.js",
   "scripts": {
@@ -17,6 +16,13 @@
   ],
   "author": "squaremarco",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamsquare/ra-data-xmysql"
+  },
+  "bugs": {
+    "url": "https://github.com/iamsquare/ra-data-xmysql/issues"
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "query-string": "^6.12.0",
