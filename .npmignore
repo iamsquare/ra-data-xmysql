@@ -1,0 +1,10 @@
+.github
+**/node_modules/**
+src/**
+.babelrc
+.editorconfig
+.gitignore
+.prettierrc
+.eslintrc
+README.md
+rollup.*

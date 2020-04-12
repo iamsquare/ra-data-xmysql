@@ -1,9 +1,12 @@
 {
   "name": "@iamsquare/ra-data-xmysql",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A react-admin dataProvider for xmysql's API generator",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/es/index.js",
   "scripts": {
+    "build": "rollup -c",
+    "build:watch": "npm run build -- -w",
     "prettier": "pretty-quick",
     "prettier:staged": "npm run prettier -- --staged"
   },
@@ -25,10 +28,18 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "core-js": "^3.6.5",
     "query-string": "^6.12.0",
-    "ramda": "^0.27.0"
+    "ramda": "^0.27.0",
+    "regenerator-runtime": "^0.13.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-json": "^4.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
@@ -42,7 +53,12 @@
     "eslint-plugin-sonarjs": "^0.5.0",
     "husky": "^4.2.5",
     "prettier": "^2.0.4",
-    "pretty-quick": "^2.0.1"
+    "pretty-quick": "^2.0.1",
+    "rollup": "^2.6.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-externals": "^2.1.5"
   },
   "peerDependencies": {
     "xmysql": "^0.5.1"
