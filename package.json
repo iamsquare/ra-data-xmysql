@@ -1,6 +1,7 @@
 {
   "name": "@iamsquare/ra-data-xmysql",
   "version": "0.0.1",
+  "private": false,
   "description": "A react-admin dataProvider for xmysql's API generator",
   "main": "src/index.js",
   "scripts": {
