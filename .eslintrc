@@ -1,0 +1,31 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "plugin:ramda/recommended",
+    "plugin:sonarjs/recommended",
+    "plugin:promise/recommended"
+  ],
+  "plugins": [
+    "ramda",
+    "prettier",
+    "babel",
+    "sonarjs",
+    "optimize-regex",
+    "promise"
+  ],
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {}
+    }
+  },
+  "rules": {
+    "optimize-regex/optimize-regex": "warn"
+  }
+}

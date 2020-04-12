@@ -1,0 +1,48 @@
+{
+  "name": "@iamsquare/ra-data-xmysql",
+  "version": "0.0.1",
+  "description": "A react-admin dataProvider for xmysql's API generator",
+  "main": "src/index.js",
+  "scripts": {
+    "prettier": "pretty-quick",
+    "prettier:staged": "npm run prettier -- --staged"
+  },
+  "keywords": [
+    "react-admin",
+    "data provider",
+    "rest",
+    "xmysql",
+    "react"
+  ],
+  "author": "squaremarco",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "query-string": "^6.12.0",
+    "ramda": "^0.27.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-optimize-regex": "^1.1.7",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-ramda": "^2.5.1",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.4",
+    "pretty-quick": "^2.0.1"
+  },
+  "peerDependencies": {
+    "xmysql": "^0.5.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier:staged"
+    }
+  }
+}
