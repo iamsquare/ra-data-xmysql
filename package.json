@@ -27,7 +27,7 @@
     "url": "https://github.com/iamsquare/ra-data-xmysql/issues"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "query-string": "^6.12.0",
     "ramda": "^0.27.0",
